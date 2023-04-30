@@ -35,7 +35,7 @@ pip install aiopools
 ## Link
 
 - GitHub: [https://github.com/Cyberbolt/aiopools](https://github.com/Cyberbolt/aiopools)
-- Cyber Light Notes: [https://www.cyberlight.xyz/](https://www.cyberlight.xyz/)
+- CyberLight: [https://www.cyberlight.xyz/](https://www.cyberlight.xyz/)
 
 ## Minimal example
 
