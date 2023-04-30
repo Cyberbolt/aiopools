@@ -8,20 +8,8 @@ async def block_io(i):
     return i
 
 
-async def main2():
-    async with AsyncPool(maxio=100) as pool:
-        tasks = []
-        for i in range(100):
-            tasks.append(
-                pool.create_task(block_io(i))
-            )
-    
-    response = await asyncio.gather(*tasks)
-    print(response)
-
-
 async def main():
-    async with AsyncPool(maxio=100) as pool:
+    async with AsyncPool(maxio=20) as pool:
         tasks = [pool.create_task(block_io(i)) for i in range(100)]
     
     response = await asyncio.gather(*tasks)
