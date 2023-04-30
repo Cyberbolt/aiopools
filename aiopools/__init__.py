@@ -4,6 +4,9 @@ import asyncio
 class AsyncPool:
     
     def __init__(self, maxio: int = 20):
+        '''
+            maxio: The maximum number of coroutines allowed by the system.
+        '''
         self.semaphore = asyncio.Semaphore(maxio)
         self.tasks = []
     
